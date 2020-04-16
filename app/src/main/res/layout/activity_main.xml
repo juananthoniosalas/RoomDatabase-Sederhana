@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15px"
+    android:background="@drawable/roomdbbg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="150dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:fontFamily="@font/moonbold"
+                android:id="@+id/inputNama"
+                android:layout_marginBottom="15dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:fontFamily="@font/moonbold"
+                android:id="@+id/inputAlamat"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:fontFamily="@font/moonbold"
+                android:layout_gravity="center"
+                android:id="@+id/btnTambah"
+                android:textColor="#fff"
+                android:background="@drawable/custom_button"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Hasil data yang ditambahkan"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/moonbold"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/i_result"
+        android:layout_marginLeft="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Kosong"
+        android:fontFamily="@font/moonbold"
+        android:textColor="#000" />
+
+
+</LinearLayout>
